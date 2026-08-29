@@ -7,9 +7,20 @@ Beskriv kort vad labben gick ut på och vad du gjorde.
 ## 2. Pipeline
 
 - Vad triggar pipeline?
+
+den triggas när kod pushas/pulls från main eller även manuellt
+
 - Vilka steg körs?
+
+Kod hämtas, sen startas ubuntu med python, sen pip installeras reqs. och testerna körs
+
 - Vad händer om ett steg misslyckas?
+
+pipeline bryts och de nästkommande steg körs inte
+
 - Hur kan pipeline stödja säkerhet?
+
+det kan upptäckate problem/kontrollera koden innan den ändras
 
 ## 3. Säkerhetskontroller
 
