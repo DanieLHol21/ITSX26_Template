@@ -25,8 +25,18 @@ det kan upptäckate problem/kontrollera koden innan den ändras
 ## 3. Säkerhetskontroller
 
 - Vilka kontroller körde eller granskade du?
+
+security_check.sh - rapporterar att grund kontoller passerade
+basic_config_check.py - godkände konfigurationen
+evidence_collector.sh - skapade .txt med filer so finns i repon
+
 - Vad blev resultatet?
+
+all godkännes
+
 - Vilka förbättringar föreslår du?
+
+security_check.sh och basic_config:check.py körs automatiskt reden vid pull request till main men evidence collector.sh behövs köras manuellts, det är kanske en sak som kan förbättras
 
 ## 4. Dependency och supply chain
 
