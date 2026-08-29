@@ -41,15 +41,34 @@ security_check.sh och basic_config:check.py körs automatiskt reden vid pull req
 ## 4. Dependency och supply chain
 
 - Vilket beroende eller simulerat alert analyserade du?
+
+alertet om example_lib 
+
 - Vad var risken?
+
+att en äldre version kanske har kända säkerhetsproblem
+
 - Vad bör göras innan uppdatering accepteras?
+
+kontrollera vad som ändras i nya version/ om den nya vesion behöver nya tester att fungera
 
 ## 5. Code scanning och AI-stöd
 
 - Vilken varning analyserade du?
+
+varningen att config filen innehåller en placeholder for en secret
+
 - Vad föreslog AI?
+
+att inte lagra riktiga secrest /lösenord i repot
+
 - Vad verifierade du själv?
+
+kontorllerade conif.example.json och såg att secret_value använder en placeholder istället för riktig secret
+
 - Vilken egen slutsats drog du?
+
+att placeholders är säkrare i config som finns i repot
 
 ## 6. Guardrails
 
@@ -60,6 +79,17 @@ security_check.sh och basic_config:check.py körs automatiskt reden vid pull req
 ## 7. Avslutande reflektion
 
 - Vad lärde du dig om DevSecOps?
+
+säkerhets bör vara del av hela utvecklingsprocessen inte bara något du gör på slutet.
+
 - Hur kan AI vara ett stöd?
+
+Med att förklara tekniska begrrepp, tolka olika scripts etc.
+
 - Vilka risker finns med att lita för mycket på AI?
+
+ai kan ge felaktiuga info och säga den till dig som om det var en fact
+
 - Hur kan automatiserade kontroller bidra till säkrare leveranser?
+
+den kan uptäcka problem tidigt och den kan göra dem enkla men tidskrävande tester som ingen vill göra men är viktiga

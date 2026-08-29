@@ -17,8 +17,10 @@ Hjälp studenten att granska en ändring innan den accepteras.
 
 Välj ett alternativ:
 
-- Acceptera
+- **Acceptera**
 - Ändra
 - Stoppa
 
 Motivera beslutet kort.
+
+ALl tester och säkerhetskontroller har passerat, all är dokumenterad och inga secrets har lagts till
