@@ -25,30 +25,49 @@
 ---
 ## 4. Recovery-plan
 ### Vad kan gå fel?
+kan inte längre logga in på vm via ssh
 ### Hur upptäcker jag problemet?
+connection misslyckas
 ### Vad kontrollerar jag först?
+först korntrollera om vm är på/ nätverka fungerar eller köra sudo systemctl status ssh
 ### Hur återställer jag åtkomst?
+om problemet är bara att den inte var igång kan jag köra sudo systemctl start ssh eller kanske kola om port forwarding är på rätt port/ip
 ### När behöver jag hjälp?
+om ingen av dessa fungerar
 ---
 ## 5. Backup
 ### Vad har jag sparat?
+dokumentation är sparad i github och jag kan enkelt skapa en kopia av VM i virtualbox
 ### Vad finns i GitHub?
+docs
 ### Vad kan återskapas?
+vm kan jag skapa en ny i virtualboxen och konfigurera den på samma sätt, filer i github kan jak klona
 ### Vad går inte att återskapa?
+saker som inte var sparade eller har en kopia
 ---
 ## 6. Cleanup
 ### VM-instans
+jag kör lokalt så det gäller bara att stänga av vm instansen
 ### Diskar
+virtuella disk finns lokalt på min dator
 ### Backuper
+eftersom jag har inte gjort nåt viktigt i VM har jag ingen backup
 ### Publika IP-adresser
-### GitHub-evidens
+ingen public IP används för lokal VM
 ---
 ## 7. CIA-reflektion
 ### Konfidentialitet
+konfidalitet har jag jobbat när jag använd SSH för att säkert ansluta mig till VM eller när jag ändrade test.txt rättigheter
 ### Integritet
+integritet i den här labban kan jag kopla till hur jag kontrollerade användarna, kollade vilka processer var aktiva och kollade på loggar 
 ### Tillgänglighet
+
+
 ---
 ## 8. Reflektion
 ### Vad fungerade bra?
+Köra VM lokalt fungerade bättre än vad jag trodde
 ### Vad var svårt?
+inte svårt men lite krångligt att kopla SSH den första gången
 ### Vad lärde jag mig?
+några enkla commands i linux och cybersäkerhet begreeep, vad de menar och hur dem anvands
