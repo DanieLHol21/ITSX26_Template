@@ -4,6 +4,7 @@ LOG_FILE="/tmp/secure_network_check.log"
 PASS_COUNT=0
 WARN_COUNT=0
 FAIL_COUNT=0
+TEST_SERVER_PID=""
 
 log_messages(){
     local status="$1"
@@ -62,6 +63,20 @@ dns_check(){
     fi
 }
 
+start_test_service(){
+    python3 -m http.server 8080 --bind 127.0.0.1 > /dev/null 2>&1 &
+    TEST_SERVER_PID=$!
+    log_messages "INFO" "Temp test started on 127.0.0.1:8080"
+}
+
+cleanup(){
+    if [[ -n "$TEST_SERVER_PID" ]]; then
+        kill "$TEST_SERVER_PID"
+        log_messages "INFO" "Temp test stopped"
+    fi
+}
+trap cleanup EXIT
+
 local_service(){
     local host="127.0.0.1"
     local port="8080"
@@ -109,8 +124,7 @@ summary(){
 
     if [[ $FAIL_COUNT -gt 0 ]]; then
     log_messages "FAIL" "Some check failed."
-    
-
+    return 1 
     #if [[ $FAIL_COUNT -gt 0 || $WARN_COUNT -gt 0 ]]; then
       #log_messages "WARN" "Some checks failed or produced warnings."
     #else
@@ -118,16 +132,23 @@ summary(){
     #fi
     elif [[ $WARN_COUNT -gt 0 ]]; then
         log_messages "WARN" "Some checks gave a warning."
+        return 0
     else
         log_messages "OK" "All checks passed."
+        return 0
     fi
 
 }
+if [[ "$1" != "--no-service" ]]; then
+    start_test_service
+fi
 
+start_test_service
 environment_check
-#dns_check "example.com"
-dns_check "fakesite.invalid"
+dns_check "example.com"
+#dns_check "fakesite.invalid"
 local_service
 port_overview
 run_checklist
 summary
+exit $?
