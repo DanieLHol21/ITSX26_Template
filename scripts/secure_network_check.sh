@@ -9,4 +9,5 @@ log_messages() {
     local status="$1"
     local message="$2"
 
-    echo "$(date '+%Y-%m-%d %H:%M:%S') [$status] $message" | tee -a "$LOG_FILE"}
+    echo "$(date '+%Y-%m-%d %H:%M:%S') [$status] $message" | tee -a "$LOG_FILE"
+    }
