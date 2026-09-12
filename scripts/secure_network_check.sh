@@ -143,7 +143,7 @@ if [[ "$1" != "--no-service" ]]; then
     start_test_service
 fi
 
-start_test_service
+#start_test_service
 environment_check
 dns_check "example.com"
 #dns_check "fakesite.invalid"

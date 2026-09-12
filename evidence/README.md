@@ -1,5 +1,4 @@
 2026-09-09 08:45:43 [INFO] Temp test started on 127.0.0.1:8080
-2026-09-09 08:45:43 [INFO] Temp test started on 127.0.0.1:8080
 2026-09-09 08:45:43 [INFO] Starting environment check..
 2026-09-09 08:45:43 [OK] IP address found: 10.0.2.15 fd17:625c:f037:2:a00:27ff:fe10:e0c6 
 2026-09-09 08:45:43 [OK] Default gateway found: 10.0.2.2
