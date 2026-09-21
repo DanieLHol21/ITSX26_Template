@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 LOG_FILE="/tmp/secure_network_check.log"
 PASS_COUNT=0
