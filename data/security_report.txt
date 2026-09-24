@@ -1,0 +1,11 @@
+ITSX26 SECURITY REPORT
+
+IOC matches:
+203.0.113.15: 6
+198.51.100.44: 2
+203.0.113.99: 1
+
+Malformed lines skipped: 1
+
+LIMITATION
+A matching IP address does not prove malicious activity.
