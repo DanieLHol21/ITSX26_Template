@@ -76,6 +76,12 @@ def report(path, results, skipped):
     report_lines = [
         "ITSX26 SECURITY REPORT",
         "",
+        "Data sources:",
+        "data/suspicious_ips.txt",
+        "data/access.log",
+        "data/auth.log",
+        "data/firewall.log",
+        "",
         "IOC matches:"
     ]
 
@@ -104,7 +110,7 @@ def main():
 
     print(results)
     print("Skippade logs: ", skipped)
-    report("data/security_report.txt", results, skipped)
+    report("output/security_report.txt", results, skipped)
 
 if __name__ == "__main__":
     main()

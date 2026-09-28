@@ -1,0 +1,17 @@
+ITSX26 SECURITY REPORT
+
+Data sources:
+data/suspicious_ips.txt
+data/access.log
+data/auth.log
+data/firewall.log
+
+IOC matches:
+203.0.113.15: 6
+198.51.100.44: 2
+203.0.113.99: 1
+
+Malformed lines skipped: 1
+
+LIMITATION
+A matching IP address does not prove malicious activity.
