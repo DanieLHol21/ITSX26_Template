@@ -82,7 +82,7 @@ def report(path, results, skipped):
         "data/auth.log",
         "data/firewall.log",
         "",
-        "IOC matches:"
+        "Matches:"
     ]
 
     for ip, count in results.items():
@@ -93,7 +93,7 @@ def report(path, results, skipped):
         f"Malformed lines skipped: {skipped}",
         "",
         "LIMITATION",
-        "A matching IP address does not prove malicious activity."
+        "A suspicious IP does not mean it's a dangerous one."
     ])
 
     with open(path, "w", encoding="utf-8") as file:
