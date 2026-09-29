@@ -1,4 +1,4 @@
-ITSX26 GENERATED SECURITY REPORT
+ITSX26 SECURITY REPORT
 
 Data sources:
 data/suspicious_ips.txt
