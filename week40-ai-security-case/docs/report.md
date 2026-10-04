@@ -15,14 +15,14 @@ Nätfiske är det mest uppenbara svaret på vad syftet med meljet är. I kursmat
 
 tillgångar som kan bli påverkade
 - Konto av medarbetarna 
-- Känslig info som personnr, lösernord etc.
-- Mejl adresser som kan starta en domino effect om mer och mer konto blir påverkade
+- Kommunens interna och känsliga information
+- Kommunens e-postsystem och e-postadresser
 
 ### Händelsekedjan
 
 **En potentiellt skadlig mejl skicaks :** Flera medararbetare får samma väl formulead mejl en länk som uppmanar dem att logga in via en länk för att beålla åtkomsten  till ett internt system
 
-**En person klickar på länken och skriver in sina uppgifter :** En medarbetare klickar på länken. Enligt caset uppger personen att inga inloggningsuppgifter lämnades. Men om personen däremot hade lämnat sina uppgifter på en falsk webbplats skulle de kunna hamna hos en angripare
+**En person klickar på länken :** En medarbetare klickar på länken. Enligt caset uppger personen att inga inloggningsuppgifter lämnades. Men om personen däremot hade lämnat sina uppgifter på en falsk webbplats skulle de kunna hamna hos en angripare
 
 **Domino effekten börjar :** Om angriparens plan var att ta över så många konto och samla in så måpnga uppgifter han kan, då kan han t.ex sprida han länken vidare till andra medarbetare och eftersom mejlen då skulle kunna komma från en betrodd kollegas adress, det blir mer sannolikt att faktikst klicka på länken och ge bort sin info
 

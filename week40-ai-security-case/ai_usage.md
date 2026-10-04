@@ -1,0 +1,1 @@
+Ai har använts som stöd med rapporten t.ex med att förbätra formulering, sammanfatta långa meningar och sammanfatta dokument som CIS dokumentet. Den har coskå hjälp mycket med README och dens struktur
