@@ -42,10 +42,26 @@ Om vi bedömmer risken utifrån dem fakta som vi har nu är risken låg/medelhö
 Men om länken var farlig eller någon har gett bort sin info på fake websidan blir risken hög eftersom konsekvenserna kan bli allvarliga. Angriparen skulle potentiellt kunna använda stullna konto och inlog. uppgifter för att få åtkomst till kommunens interna system och info
 
 ## CIS mapping
+**CIS 6 Access Control management :** Detta CIS handalr om hantering av åtkomst med huvud tanken att användare bör ha bara de behörigheter som dem behöver. Det relaterar till caset eftersom om ett medarbetarkonto skulle kunna ge angriparen tillgång till den info och de system som medarbetarn själv har åtkomst till. Om systemet är utfromat enligt principen om minsta access som CIS säger får angriparen begränsad åtkomst
+
+**CIS 8 Audit Log Management :** Detta CIS handlar om att samla in och hantera loggar för att hjälpa oss att upptäcka eller identifiera misstänkt aktivitet i systemet. Det relaterar till caset eftersom kommunen hkan udnersöka innloggar för att kunna se om nån har föröskt looga in med stulna uppgifter eller om det har hänt misstänkta ändringar i nåns konto
+
+**CIS 14 Security Awareness and Skills Training :** Detta CIS handlar om utbilnding av personer/medarbetare i "security Awareness" så att det blir lättare för de att känna igen möjliga hot. Det relaterar till caset eftersom medarbetarna behöver kunna identifiera misstänkta mejl eller liknande.
 
 ## Prioriterade åtgärder
+### Tre Åtgärder
+- 1: undersök om mejlet är farlig eller inte och om länken är farlig
+- 2: informera medarbetarna att inte klicka på länkar tills undersökningen är klar
+- 3: kolla deras loggar om någon misstänkt inlogg har sket
+### Verifiering av Åtgärder
+Åtgärd 1 kan verifieras genom att kontrollera avsändarens epost adress, vart länken leder och domänen om den leder till en webplats
+Åtgärd 2 kan verifieras genom att kontrollera om medarbetarna fick mejlet med varningen eller genom att följa upp med en utbilding om nätfiske
+Åtgärd 3 kan verifieras genom att granska inloggningloggar och kolla om det finns misstänkta inlogg
 
 ## Teksnisk koppling
+AI kan användas för att skapa mer övertygande phishing mejl som ser ut att dem kom från intern. I caset kan detta förklara varför mejlen ser trovärdiga ut vi kan inte bekräfta att AI användes. Identitet och loggning är också relevanta eftersom ett komprometterat konto kan användas av en angripar evilket kan upptäckas genom att kontrollera inloggningsloggar efter misstänkt aktivitet
 
+## Slutsats / Sammanfattning
+Caset visar en phishingattcak mot en kummunal förvaltning. Medarbetarna fick mejl som såg ut att gomma från en intern it support och en av medarbetarna klickade på länken men inga inloggninguppgifter har lämnats ut
 
-
+Den största risken är att ett konto skulle kunna koprometteras och användas för att få åtkomst till intern info eller att angriparen försöker spirda attacked vidare. Därdör är det viktigt att underöka loggar, informera medarbetarna om en potentielt attack och undersöka länken om det är faktiskt farlig
